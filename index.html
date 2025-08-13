@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Moja Pierwsza Strona</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #2c3e50;
+        }
+
+        p {
+            color: #34495e;
+            font-size: 18px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="naglowek">Witaj w mojej pierwszej stronie!</h1>
+    <p>To jest mój pierwszy krok w tworzeniu stron internetowych 🚀</p>
+
+    <!-- Obrazek z internetu -->
+    <img src="kotek.webp"
+
+    <!-- Przycisk -->
+    <br>
+    <button onclick="zmienTekst()">Kliknij mnie!</button>
+
+    <script>
+        function zmienTekst() {
+            document.getElementById("naglowek").textContent = "Kliknąłeś przycisk! 😎";
+        }
+    </script>
+</body>
+</html>
