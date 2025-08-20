@@ -2,61 +2,80 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Moja Pierwsza Strona</title>
+    <title>Moja Strona-Wizytówka</title>
     <style>
+        /* === Ogólne ustawienia dla całej strony === */
         body {
-            background-color: #f0f8ff;
+            margin: 0; /* Usuwamy domyślne marginesy */
             font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+            line-height: 1.6; /* Czytelniejszy tekst */
         }
 
-        h1 {
+        /* === Nagłówek === */
+        header {
+            background: linear-gradient(to right, #3498db, #2ecc71); /* Gradient */
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* === Sekcje === */
+        section {
+            padding: 40px 20px;
+            max-width: 800px; /* Szerokość treści */
+            margin: auto;    /* Wyśrodkowanie */
+        }
+
+        section h2 {
             color: #2c3e50;
         }
 
-        p {
-            color: #34495e;
-            font-size: 18px;
+        /* === Kontakt === */
+        .contact {
+            background: #f4f4f4; /* Jasne tło dla wyróżnienia */
+            border-top: 2px solid #ddd;
         }
 
-        img {
-            width: 200px;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
-
-        button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #3498db;
+        /* === Stopka === */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #2c3e50;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #2980b9;
         }
     </style>
 </head>
 <body>
-    <h1 id="naglowek">Witaj w mojej pierwszej stronie!</h1>
-    <p>To jest mój pierwszy krok w tworzeniu stron internetowych 🚀</p>
+    <!-- Nagłówek -->
+    <header>
+        <h1>Witaj na mojej stronie!</h1>
+        <p>Moja pierwsza strona-wizytówka 🚀</p>
+    </header>
 
-    <!-- Obrazek z internetu -->
-    <img src="kotek.webp"
+    <!-- Sekcja "O mnie" -->
+    <section id="about">
+        <h2>O mnie</h2>
+        <p>
+            Cześć! Jestem początkującym twórcą stron internetowych.
+            To moja pierwsza strona napisana w HTML, CSS i odrobinkę JS.
+            Uczę się krok po kroku 💻.
+        </p>
+    </section>
 
-    <!-- Przycisk -->
-    <br>
-    <button onclick="zmienTekst()">Kliknij mnie!</button>
+    <!-- Sekcja "Kontakt" -->
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <p>Napisz do mnie: <a href="mailto:twojemail@example.com">twojemail@example.com</a></p>
+    </section>
 
-    <script>
-        function zmienTekst() {
-            document.getElementById("naglowek").textContent = "Kliknąłeś przycisk! 😎";
-        }
-    </script>
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2025 Moja Strona</p>
+    </footer>
 </body>
 </html>
